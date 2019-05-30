@@ -58,3 +58,11 @@ augroup LaTeX_settings
     autocmd FileType tex set indentexpr=""
 augroup end
 
+" Vim session management
+let g:session_dir = '~/.vim-sessions'
+exec 'nnoremap <Leader>ss :mks! ' . g:session_dir . '/*.vim<C-D><BS><BS><BS><BS><BS>'
+exec 'nnoremap <Leader>sr :so ' . g:session_dir. '/*.vim<C-D><BS><BS><BS><BS><BS>'
+
+
+
+
