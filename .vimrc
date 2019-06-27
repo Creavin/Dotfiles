@@ -13,8 +13,12 @@ Plug 'udalov/kotlin-vim'
 " Group dependencies, vim-snippets depends on ultisnips
  Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
+" Vim latex suite, contains useful folding plugin
+Plug 'gerw/vim-latex-suite'
+
 "Plug 'valloric/youcompleteme'
 call plug#end()
+
 
 
 "Ultrasnips settings
@@ -24,6 +28,7 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 
 "# General Settings
+set mouse=a                            " Allows mouse clicks
 set clipboard=unnamedplus
 syntax on
 filetype plugin on
