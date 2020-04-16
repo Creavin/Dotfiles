@@ -1,6 +1,26 @@
 [xfdesktop-version-4.10.3+-rcfile_format]
 4.10.3+=true
 
+[/home/thomas/Desktop/raceWars.png]
+row=10
+col=0
+
+[/home/thomas/Desktop/Downloads]
+row=3
+col=0
+
+[/home/thomas/Desktop/test]
+row=0
+col=1
+
+[/home/thomas/Desktop/Curb.Your.Enthusiasm.S10E10.WEBRip.x264-ION10__ggpYNQ]
+row=5
+col=0
+
+[/home/thomas/Desktop/Curb.Your.Enthusiasm.S10E09.WEBRip.x264-ION10__LfDSRN]
+row=4
+col=0
+
 [Trash]
 row=0
 col=0
@@ -9,7 +29,7 @@ col=0
 row=1
 col=0
 
-[/home/thomasc]
+[/home/thomas]
 row=2
 col=0
 

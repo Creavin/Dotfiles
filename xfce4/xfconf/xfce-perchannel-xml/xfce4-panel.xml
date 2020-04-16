@@ -8,7 +8,6 @@
       <property name="position-locked" type="bool" value="true"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="8"/>
-        <value type="int" value="10"/>
         <value type="int" value="3"/>
         <value type="int" value="7"/>
         <value type="int" value="1"/>
@@ -36,7 +35,7 @@
         <value type="string" value="-logout-dialog"/>
         <value type="string" value="-switch-user"/>
         <value type="string" value="-separator"/>
-        <value type="string" value="-logout"/>
+        <value type="string" value="+logout"/>
         <value type="string" value="+lock-screen"/>
         <value type="string" value="-hibernate"/>
         <value type="string" value="-suspend"/>
@@ -60,19 +59,18 @@
       </property>
       <property name="show-frame" type="bool" value="false"/>
       <property name="names-ordered" type="array">
-        <value type="string" value="xfce terminal"/>
-        <value type="string" value="msm notifier"/>
-        <value type="string" value="thunar"/>
+        <value type="string" value="task manager"/>
         <value type="string" value="vlc"/>
-        <value type="string" value="blueman"/>
+        <value type="string" value="redshift-gtk"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="xfce terminal"/>
+        <value type="string" value="dropbox"/>
+        <value type="string" value="msm notifier"/>
         <value type="string" value="blueman-tray"/>
         <value type="string" value="xfce4-power-manager"/>
-        <value type="string" value="pamac-tray"/>
         <value type="string" value="networkmanager applet"/>
+        <value type="string" value="pamac-tray"/>
         <value type="string" value="clipman"/>
-      </property>
-      <property name="names-hidden" type="array">
-        <value type="string" value="xfce4-power-manager"/>
       </property>
     </property>
     <property name="plugin-3" type="string" value="tasklist">
@@ -87,11 +85,8 @@
       <property name="mpris-players" type="string" value="spotify;vlc"/>
     </property>
     <property name="plugin-8" type="string" value="whiskermenu"/>
-    <property name="plugin-5" type="string" value="clock">
-      <property name="mode" type="uint" value="2"/>
-    </property>
+    <property name="plugin-5" type="string" value="clock"/>
     <property name="plugin-1" type="string" value="showdesktop"/>
-    <property name="plugin-10" type="string" value="power-manager-plugin"/>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>
