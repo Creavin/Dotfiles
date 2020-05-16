@@ -59,6 +59,8 @@
       </property>
       <property name="show-frame" type="bool" value="false"/>
       <property name="names-ordered" type="array">
+        <value type="string" value="steam"/>
+        <value type="string" value="discord"/>
         <value type="string" value="task manager"/>
         <value type="string" value="vlc"/>
         <value type="string" value="redshift-gtk"/>
@@ -82,7 +84,7 @@
     </property>
     <property name="plugin-9" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="spotify;vlc"/>
+      <property name="mpris-players" type="string" value="chromium.instance23313;spotify;vlc"/>
     </property>
     <property name="plugin-8" type="string" value="whiskermenu"/>
     <property name="plugin-5" type="string" value="clock"/>

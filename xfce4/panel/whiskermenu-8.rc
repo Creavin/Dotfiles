@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-web-browser.desktop,exo-mail-reader.desktop
-recent=xfce-session-settings.desktop,org.gnome.Evince.desktop,spotify.desktop,xfce4-taskmanager.desktop,exo-file-manager.desktop,exo-preferred-applications.desktop,xfce-keyboard-settings.desktop,xfce4-accessibility-settings.desktop,xfce-wm-settings.desktop,exo-terminal-emulator.desktop
+recent=gparted.desktop,xfce-keyboard-settings.desktop,steam.desktop,rubymine.desktop,xfce4-screenshooter.desktop,xfce-session-settings.desktop,org.gnome.Evince.desktop,spotify.desktop,xfce4-taskmanager.desktop,exo-file-manager.desktop
 button-icon=/usr/share/icons/whiskermenu-manjaro.svg
 button-single-row=false
 show-button-title=false
