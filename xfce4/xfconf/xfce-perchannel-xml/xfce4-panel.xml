@@ -59,6 +59,7 @@
       </property>
       <property name="show-frame" type="bool" value="false"/>
       <property name="names-ordered" type="array">
+        <value type="string" value="ckb-next"/>
         <value type="string" value="steam"/>
         <value type="string" value="discord"/>
         <value type="string" value="task manager"/>
