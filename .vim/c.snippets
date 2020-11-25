@@ -1,0 +1,39 @@
+snippet main "stock main"
+#include <stdio.h>
+
+int main(void){
+	$0
+
+	return 0;
+}
+endsnippet
+
+
+snippet for "for loop"
+for(i = 0; i < $1; i++){
+	$2
+}
+endsnippet
+
+snippet pf "printf statement"
+printf("$1",$2);
+endsnippet
+
+snippet parray "print array"
+for(i = 0; i < $1; i++){
+	printf("%d",$2);
+}
+endsnippet
+
+
+snippet forij "for loop"
+for(i = 0; i < $1; i++){
+	for(j = 0; j < $2; j++){
+		$3
+	}
+}
+endsnippet
+
+snippet soi "size of int"
+sizeof(int)
+endsnippet

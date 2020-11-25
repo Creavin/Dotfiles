@@ -1,3 +1,7 @@
+
+" This enables automatic indentation as you type.
+filetype indent on
+
 set mouse=a " allows the mouse to move the cursor
 set linebreak " prevents vim from cutting words when wrapping long lines
 set clipboard=unnamedplus " allows vim to share os clipboard
@@ -5,6 +9,11 @@ syntax on
 set number
 set tabstop=2                          " Set tabstop
 set shiftwidth=2                       " Set shiftwidth
+
+
+" Go to the end of a line while in insert mode
+map <C-a> <ESC>$
+imap <C-a> <ESC>A
 
 " Using 'gj' and 'gk' instead of just 'j' and 'k' allows moving down and up by screen lines instead of file lines.
 noremap j gj
@@ -20,10 +29,13 @@ Plug 'scrooloose/nerdtree'  ,
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 " Group dependencies, vim-snippets depends on ultisnips
- Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+"Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 " Vim autocomplete
-Plug 'valloric/youcompleteme'
+" Plug 'valloric/youcompleteme'
+
+" latex-suite
+Plug 'vim-latex/vim-latex'
 
 " Kotlin synyax etc
 Plug 'udalov/kotlin-vim'
@@ -34,6 +46,8 @@ Plug 'vim-ruby/vim-ruby'
 " Haml synyax etc
 Plug 'tpope/vim-haml'
 call plug#end()
+
+
 
 
 
