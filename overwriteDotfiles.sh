@@ -1,5 +1,5 @@
 #!/bin/bash
-cp -r xfce4 ~/.config
+#cp -r xfce4 ~/.config
 cp -r .vim/ ~
 cp -r fonts ~/.local/share
 
