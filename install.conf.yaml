@@ -1,0 +1,13 @@
+- defaults:
+    link:
+      create: true # new link, if non-existent
+      relink: true
+      force: true # overwrite existing file
+
+- clean: ["~"]
+
+- link:
+    ~/.bashrc : bash/.bashrc
+    ~/.vimrc : vim/.vimrc
+    ~/.Xmodmap : xorg/.Xmodmap
+    ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml: xfce4/xfce4-keyboard-shortcuts.xml

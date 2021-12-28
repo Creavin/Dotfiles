@@ -1,0 +1,51 @@
+filetype indent on " enable automatic indentation as you type.
+
+syntax on
+set clipboard=unnamedplus " allows vim to share os clipboard
+set linebreak  " prevents vim from cutting words when wrapping long lines
+set mouse=a  " allows the mouse to move the cursor
+set number
+set shiftwidth=2  " Set shiftwidth
+set tabstop=2  " Set tabstop
+
+" Go to the end of a line while in insert mode
+map <C-a> <ESC>$
+imap <C-a> <ESC>A
+
+" Using 'gj' and 'gk' instead of just 'j' and 'k' allows moving down and up by screen lines instead of file lines.
+noremap j gj
+noremap k gk
+
+" Maps interpreted value of Alt+n (sed -n l) to keybinding
+execute "set <A-n>=\033n"  
+nnoremap <A-n> :NERDTreeToggle<CR>  " Key to open NERDTree in commands mode
+
+
+"###############
+"### Plugins ###
+"###############
+
+call plug#begin('~/.vim/plugged') 
+
+Plug 'preservim/nerdtree'  " Add file tree
+Plug 'Xuyuanp/nerdtree-git-plugin'  " Shows Git status flags for files and folders in NERDTree
+
+"---------------------------------
+
+Plug 'valloric/youcompleteme'  " Add autocomplete
+
+"---------------------------------
+
+Plug 'patstockwell/vim-monokai-tasty' " Add the molokai colour scheme
+Plug 'tpope/vim-liquid'  " Liquid niceties
+Plug 'vim-ruby/vim-ruby'  " Ruby niceties
+Plug 'tpope/vim-haml'  " Haml, Sass, and SCSS niceties
+
+"---------------------------------
+
+Plug 'vim-latex/vim-latex', { 'for': 'tex' } " Provides excellent latex shortcuts
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }  " Produces pdfs live 
+call plug#end()
+
+
+colorscheme vim-monokai-tasty

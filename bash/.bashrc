@@ -2,12 +2,24 @@
 # ~/.bashrc
 #
 
-
+# Included my Manjoro. Early returns if shell not running interactively
 [[ $- != *i* ]] && return
 
-# Important to set this for ranger
+# Set default editor (for ranger to pickup)
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+# Custom aliases 
+alias be="bundle exec"
+alias gs="git status"
+alias gl="git log"
+alias gc="git commit"
+
+
+
+################################
+#### Majoro Default Commands ###
+################################
 
 colors() {
 	local fgc bgc vals seq0
@@ -103,8 +115,6 @@ alias more=less
 
 xhost +local:root > /dev/null 2>&1
 
-complete -cf sudo
-
 # Bash won't get SIGWINCH if another process is in the foreground.
 # Enable checkwinsize so that bash will check the terminal size when
 # it regains control.  #65623
@@ -143,16 +153,16 @@ ex ()
   fi
 }
 
-[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
 
-[[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
+#######################################
+#### Commands that must be run last ###
+#######################################
 
-export PATH="/usr/local/bin:$PATH"
-
+# Required by Tilix to prevent bash warning
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
+	source /etc/profile.d/vte.sh
 fi
 
+# Included by RVM:
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh

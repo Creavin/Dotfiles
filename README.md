@@ -1,6 +1,13 @@
-# Dotfiles
-I'm starting my dotfiles from scratch. This project will serve as a means to easily restore my dotfiles to any new system
-- xfce4 config
-- vim config
-- vim ultrasnips
-- keybindings (namely swap esacpe and caps)
+# My Dotfiles
+
+I use [Dotbot](https://github.com/anishathalye/dotbot) to manage my dotfiles. It symlinks the dotfiles in this repo to the corressponding files defined in the `install.conf.yaml` config.
+
+## Installation
+```
+./install
+```
+
+If you run into a dotbot permissions error, you may need to run 
+```
+chmod +x ./dotbot/bin/dotbot
+```
