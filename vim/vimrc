@@ -17,7 +17,7 @@ noremap j gj
 noremap k gk
 
 " Maps interpreted value of Alt+n (sed -n l) to keybinding
-execute "set <A-n>=\033n"  
+" execute "set <A-n>=\033n"  
 nnoremap <C-n> :NERDTreeToggle<CR>  " Key to open NERDTree in commands mode
 
 
@@ -33,6 +33,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'  " Shows Git status flags for files and folde
 "---------------------------------
 
 Plug 'valloric/youcompleteme'  " Add autocomplete
+Plug 'jiangmiao/auto-pairs'
 
 "---------------------------------
 
