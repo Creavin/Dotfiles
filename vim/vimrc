@@ -18,7 +18,7 @@ noremap k gk
 
 " Maps interpreted value of Alt+n (sed -n l) to keybinding
 execute "set <A-n>=\033n"  
-nnoremap <A-n> :NERDTreeToggle<CR>  " Key to open NERDTree in commands mode
+nnoremap <C-n> :NERDTreeToggle<CR>  " Key to open NERDTree in commands mode
 
 
 "###############

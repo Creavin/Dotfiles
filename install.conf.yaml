@@ -7,7 +7,7 @@
 - clean: ["~"]
 
 - link:
-    ~/.bashrc : bash/.bashrc
-    ~/.vimrc : vim/.vimrc
-    ~/.Xmodmap : xorg/.Xmodmap
+    ~/.bashrc : bash/bashrc
+    ~/.vimrc : vim/vimrc
+    ~/.Xmodmap : xorg/Xmodmap
     ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml: xfce4/xfce4-keyboard-shortcuts.xml
