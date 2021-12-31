@@ -7,6 +7,7 @@ set mouse=a  " allows the mouse to move the cursor
 set number
 set shiftwidth=2  " Set shiftwidth
 set tabstop=2  " Set tabstop
+set guifont=JetBrains\ Mono\ Medium\ 12 " Font must be installed locally
 
 " Go to the end of a line while in insert mode
 map <C-a> <ESC>$
