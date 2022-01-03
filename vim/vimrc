@@ -42,6 +42,7 @@ Plug 'patstockwell/vim-monokai-tasty' " Add the molokai colour scheme
 Plug 'tpope/vim-liquid'  " Liquid niceties
 Plug 'vim-ruby/vim-ruby'  " Ruby niceties
 Plug 'tpope/vim-haml'  " Haml, Sass, and SCSS niceties
+Plug 'ap/vim-css-color'  " Show rgba colours in css files etc
 
 "---------------------------------
 

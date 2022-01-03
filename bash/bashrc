@@ -163,6 +163,8 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
 	source /etc/profile.d/vte.sh
 fi
 
+export PATH="$PATH:$HOME/.scripts"
+
 # Included by RVM:
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
