@@ -7,6 +7,7 @@ set mouse=a  " allows the mouse to move the cursor
 set number
 set shiftwidth=2  " Set shiftwidth
 set tabstop=2  " Set tabstop
+set expandtab  " Inserts spaces when tab key is pressed
 set guifont=JetBrains\ Mono\ Medium\ 12 " Font must be installed locally
 
 " Go to the end of a line while in insert mode
@@ -28,21 +29,23 @@ nnoremap <C-n> :NERDTreeToggle<CR>  " Key to open NERDTree in commands mode
 
 call plug#begin('~/.vim/plugged') 
 
-Plug 'preservim/nerdtree'  " Add file tree
+Plug 'airblade/vim-gitgutter'  " Shows git diff in file gutter
 Plug 'Xuyuanp/nerdtree-git-plugin'  " Shows Git status flags for files and folders in NERDTree
+Plug 'preservim/nerdtree'  " Add file tree
 
 "---------------------------------
 
-Plug 'valloric/youcompleteme'  " Add autocomplete
 Plug 'jiangmiao/auto-pairs'
+Plug 'valloric/youcompleteme'  " Add autocomplete
 
-"---------------------------------
+"-------Syntax--------------
 
-Plug 'patstockwell/vim-monokai-tasty' " Add the molokai colour scheme
+Plug 'ap/vim-css-color'  " Show rgba colours in css files etc
+Plug 'patstockwell/vim-monokai-tasty'  " Add the molokai colour scheme
+Plug 'tpope/vim-commentary'  " Shortcuts for commenting out code
+Plug 'tpope/vim-haml'  " Haml, Sass, and SCSS niceties
 Plug 'tpope/vim-liquid'  " Liquid niceties
 Plug 'vim-ruby/vim-ruby'  " Ruby niceties
-Plug 'tpope/vim-haml'  " Haml, Sass, and SCSS niceties
-Plug 'ap/vim-css-color'  " Show rgba colours in css files etc
 
 "---------------------------------
 
