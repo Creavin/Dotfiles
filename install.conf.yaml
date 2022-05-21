@@ -7,7 +7,8 @@
 - clean: ["~"]
 
 - link:
-    ~/.bashrc : bash/bashrc
-    ~/.vimrc : vim/vimrc
-    ~/.Xmodmap : xorg/Xmodmap
+    ~/.bashrc: bash/bashrc
     ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml: xfce4/xfce4-keyboard-shortcuts.xml
+    ~/.rubocop.yml: ruby/.rubocop.yml
+    ~/.vimrc: vim/vimrc
+    ~/.Xmodmap: xorg/Xmodmap
