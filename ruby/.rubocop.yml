@@ -9,3 +9,11 @@ Metrics/MethodLength:
 
 Style/Documentation: 
   Enabled: false
+
+Naming/MethodParameterName:
+  AllowedNames:
+    - n
+    - m 
+    - x
+    - y
+    - z
