@@ -1,13 +1,7 @@
 AllCops:
   NewCops: enable
 
-Style/FrozenStringLiteralComment:
-  Enabled: false
-
 Metrics/MethodLength:
-  Enabled: false
-
-Style/Documentation: 
   Enabled: false
 
 Naming/MethodParameterName:
@@ -17,3 +11,12 @@ Naming/MethodParameterName:
     - x
     - y
     - z
+
+Style/BlockComments:
+  Enabled: false
+
+Style/Documentation: 
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
