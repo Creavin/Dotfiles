@@ -5,12 +5,7 @@ Metrics/MethodLength:
   Enabled: false
 
 Naming/MethodParameterName:
-  AllowedNames:
-    - n
-    - m 
-    - x
-    - y
-    - z
+  MinNameLength: 1
 
 Style/BlockComments:
   Enabled: false
