@@ -15,6 +15,16 @@ alias gs="git status"
 alias gl="git log"
 alias gc="git commit"
 
+# Add auto-complete for the aws cli
+aws_auto_complete=/bin/aws_completer
+if [ -f "$aws_auto_complete" ]
+then
+    complete -C "$aws_auto_complete" aws
+else
+    echo "$aws_auto_complete does not exist. Install the aws cli"
+fi
+
+
 grepr ()
 {
 	if [[ $# -ne 1 ]]; then
@@ -23,11 +33,6 @@ grepr ()
 	fi
 	grep -r "$1" . --color=auto
 }
-
-
-
-
-
 
 
 ################################
