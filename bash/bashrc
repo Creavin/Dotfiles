@@ -6,14 +6,31 @@
 [[ $- != *i* ]] && return
 
 # Set default editor (for ranger to pickup)
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
+
+# GTK var is not being set by the gtk manager
+export GTK_THEME=Adwaita:dark
 
 # Custom aliases 
 alias be="bundle exec"
 alias gs="git status"
 alias gl="git log"
 alias gc="git commit"
+
+# Alias for AlgoLab
+alias gpp="g++ -std=c++14 -Wall -O3"
+alias gppc="g++ -std=c++14 -Wall -O3 -lgmp"
+alias gppd="g++ -std=c++14 -Wall -O0 -g" # gpp debug
+
+# gpp run
+gppr() {
+  gpp $1 && ./a.out < $2
+}
+
+gpprt() {
+  gpp $1 && time ./a.out < $2
+}
 
 # Add auto-complete for the aws cli
 aws_auto_complete=/bin/aws_completer
