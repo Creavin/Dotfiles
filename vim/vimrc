@@ -1,12 +1,12 @@
-filetype indent on " enable automatic indentation as you type.
+filetype plugin indent on " enable automatic indentation as you type.
 
 syntax on
 set clipboard=unnamedplus " allows vim to share os clipboard
 set linebreak  " prevents vim from cutting words when wrapping long lines
 set mouse=a  " allows the mouse to move the cursor
 set number
-set shiftwidth=2  " Set shiftwidth
 set tabstop=2  " Set tabstop
+set shiftwidth=2  " Set shiftwidth
 set expandtab  " Inserts spaces when tab key is pressed
 set guifont=JetBrains\ Mono\ Medium\ 12 " Font must be installed locally
 set splitbelow  " new vertical windows are open from the right
@@ -34,6 +34,14 @@ nnoremap <silent><CR> :noh<CR>
  " Recognizes the following as correct:
  syn match AcronymNoSpell '\<\(\u\|\d\)\{3,}s\?\>' contains=@NoSpell
  set nospell
+
+" Use two spaces instead of four for python
+" https://vi.stackexchange.com/questions/8382/vim-doesnt-use-the-correct-indentation-in-python-files
+augroup python
+    autocmd!
+    " Add shiftwidth and/or softtabstop if you want to override those too.
+    autocmd FileType python setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
+augroup end
 
 "##############################################
 "################### Plugins ##################

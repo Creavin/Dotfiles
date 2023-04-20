@@ -17,20 +17,7 @@ alias be="bundle exec"
 alias gs="git status"
 alias gl="git log"
 alias gc="git commit"
-
-# Alias for AlgoLab
-alias gpp="g++ -std=c++14 -Wall -O3"
-alias gppc="g++ -std=c++14 -Wall -O3 -lgmp"
-alias gppd="g++ -std=c++14 -Wall -O0 -g" # gpp debug
-
-# gpp run
-gppr() {
-  gpp $1 && ./a.out < $2
-}
-
-gpprt() {
-  gpp $1 && time ./a.out < $2
-}
+alias gshow="PAGER='vim -' git -c color.ui=false show"
 
 # Add auto-complete for the aws cli
 aws_auto_complete=/bin/aws_completer
@@ -193,13 +180,17 @@ ex ()
 #### Commands that must be run last ###
 #######################################
 
-# Required by Tilix to prevent bash warning
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-	source /etc/profile.d/vte.sh
-fi
 
 export PATH="$PATH:$HOME/.scripts"
 
 # Included by RVM:
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# Required by Miniconda
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+
+# Required by Tilix to prevent bash warning
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+	source /etc/profile.d/vte.sh
+fi
